@@ -20,3 +20,11 @@ function button_(){
     aud.src = "aud/button.mp3";
     aud.play() ;
 }
+
+window.onload = function() {
+    const aud = new Audio() ; 
+    aud.src = "aud/amongdead.mp3";
+    aud.volume = 0.4; 
+    aud.play() ;
+}
+

@@ -13,5 +13,10 @@ function change(){
     document.getElementById("demo").style.color=color
     document.getElementById("cont").style.background=color;
 
-
+    button_();
+}
+function button_(){
+    const aud = new Audio() ; 
+    aud.src = "aud/button.mp3";
+    aud.play() ;
 }

@@ -6,6 +6,7 @@ function print(){
     document.getElementById("printshit").style.fontSize =document.getElementById("sizefont").value +"px"
     document.getElementById("printshit").style.color =document.getElementById("stylecolor").value 
     //stylecolor
+    boom();
 }
 
 
@@ -15,8 +16,27 @@ var color = getnewcolor() ;
     document.getElementById("printshit").style.color = color
     console.log("color: " +color ) ; 
 
+    amongoos();
+
+}
+function button_(){
+    const aud = new Audio() ; 
+    aud.src = "aud/button.mp3";
+    aud.play() ;
 }
 
+function amongoos(){
+    const aud = new Audio() ; 
+    aud.src = "aud/amongoos.mp3";
+    aud.play() ;
+}
+
+function boom(){
+    console.log("SHIT") ; 
+    const aud = new Audio() ; 
+    aud.src = "aud/boom.mp3";
+    aud.play() ;
+}
 
 function getnewcolor(){
 var symbols,color;
@@ -42,6 +62,7 @@ var size=0 ;
     number= parseInt(number)-5  + "px"  ; 
      console.log(number) ; 
     document.getElementById("printshit").style.fontSize = number   ;   
+    button_();
 }
 
 function big(){
@@ -57,5 +78,6 @@ function big(){
         
         number= parseInt(number)+5  + "px"  ; 
          console.log(number) ; 
-        document.getElementById("printshit").style.fontSize = number   ;   
+        document.getElementById("printshit").style.fontSize = number   ;  
+        button_(); 
 }
